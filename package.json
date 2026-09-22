@@ -1,0 +1,27 @@
+{
+  "name": "sofeed-tui",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "sofeed": "src/cli.tsx"
+  },
+  "scripts": {
+    "dev": "bun src/cli.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "check": "bun run typecheck && bun test",
+    "build": "bun build --compile --minify --outfile dist/sofeed src/cli.tsx",
+    "build:release": "bun scripts/build-release.ts"
+  },
+  "dependencies": {
+    "ink": "7.1.1",
+    "react": "19.2.8",
+    "react-devtools-core": "7.0.1",
+    "wrap-ansi": "10.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "19.2.14",
+    "typescript": "latest"
+  }
+}
