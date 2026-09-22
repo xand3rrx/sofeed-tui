@@ -19,8 +19,6 @@ Use arrows or `j`/`k` to move and Enter or `l` to open. `h`, Escape, or `q` goes
 
 The footer always shows the keys that work right now: its first line is the global set and its second line is what the current screen adds, so nothing has to be memorised.
 
-`L` is a poll, not a push: sofeed has no server-sent events endpoint (the original client's firehose did), so live re-reads the public discover page every 15 seconds, prepends anything new and de-duplicates by post id, keeping the last 100. Space pauses it.
-
 Within an entry, Tab and Shift+Tab cycle forward and backward through the author, the thread, the save action, links, and `#hashtags`; Enter opens the selected target. Use `r` to reply, `u` for the author, `s` to save/unsave, `o` for the browser, `f`/`F` to follow/unfollow, `e` to edit, and `d` to delete. A thread adds `T` for its top and `P` for its parent.
 
 Multiline editors use Enter for a newline and Ctrl+Enter to preview or submit. Ctrl+S is a fallback for terminals that cannot distinguish Ctrl+Enter from Enter.
